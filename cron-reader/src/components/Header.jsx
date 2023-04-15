@@ -6,10 +6,10 @@ const Header = () => {
   <>
       <Image src = {logo} alt = 'logo' width = { 100 } marginBottom = '1rem' />
           <Heading color ='white' marginBottom='1rem'>
-        Cron Maker
+        Cron Expressor
       </Heading>
     <Text fontSize={25} textAlign='center'>
-      Paste in when you want your cronjob to run and what you want it to run and we'll do the rest
+     Type when you want your cron to run.
     </Text>
   </>
   );

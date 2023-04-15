@@ -11,7 +11,7 @@ const TextInput = ({ extractKeywords }) => {
     if (text === '') {
       toast({
         title: 'Text field is empty.',
-        description: 'Please enter some text to extract keywords.',
+        description: 'Please enter a prompt to return your cron expression.',
         status: 'error',
         duration: 5000,
         isClosable: false,
@@ -42,7 +42,7 @@ const TextInput = ({ extractKeywords }) => {
         _hover={{ bg: 'green.700' }}
         onClick={submitText}
       >
-        Extract Keywords
+        Create Cron Expression
       </Button>
     </>
   );

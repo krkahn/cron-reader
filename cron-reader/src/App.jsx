@@ -29,6 +29,7 @@ const App = () => {
 
     const json = await response.json();
     const data = json.choices[0].text.trim(); 
+    console.log(json);
     console.log(data);
     setKeywords(data);
     setLoading(false);
