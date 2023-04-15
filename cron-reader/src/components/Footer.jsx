@@ -7,7 +7,7 @@ const Footer = () => {
       <Flex justifyContent='center' alignItems='center'>
         <Image src={ logo } marginRight={1} />
         <Text>
-          Powered by Open AI
+          Powered by Open AI!
         </Text>
     </Flex>
     </Box>
