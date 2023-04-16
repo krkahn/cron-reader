@@ -21,7 +21,8 @@ const App = () => {
       },
       body: JSON.stringify({
         model: 'text-davinci-003',
-        prompt: 'Create a cron expression from this prompt\n\n' + text + ''
+        prompt: 'Create a cron expression from this prompt\n\n' + text + '',
+        //max_tokens: 100
       })
     }
 
@@ -29,8 +30,6 @@ const App = () => {
 
     const json = await response.json();
     const data = json.choices[0].text.trim(); 
-    console.log(json);
-    console.log(data);
     setKeywords(data);
     setLoading(false);
   };
